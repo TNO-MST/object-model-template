@@ -1,0 +1,22 @@
+<jaxb:bindings xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="3.0">
+	<jaxb:bindings schemaLocation="IEEE1516-OMT-2010.xsd" node="/xs:schema">
+		
+		<!-- JAXB generates by default the Java type 'List<Object>' for the notes attribute, type IDREFS.
+		This causes a NPE in JAXB when writing an OMT file via the JAXB generated code.
+		The solution is to rewrite the notes attribute to use the Java type 'String'. -->
+		<jaxb:bindings node="//xs:attribute[@name='notes']">
+			<jaxb:property>
+				<jaxb:baseType>
+					<jaxb:javaType name="java.lang.String"></jaxb:javaType>
+				</jaxb:baseType>
+			</jaxb:property>
+		</jaxb:bindings>	
+		
+		<!-- The schema contains an element named 'String'. Rewrite the name to 'HLAString'
+		to avoid mixing up the name with the standard Java String. 
+		Alternatively the original (not re-written) name can be used with a fully qualified name. -->
+		<jaxb:bindings node="//xs:complexType[@name='String']">
+			<jaxb:class name="HLAString"/>
+		</jaxb:bindings>
+	</jaxb:bindings>
+</jaxb:bindings>
