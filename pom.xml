@@ -33,6 +33,10 @@
 		</developer>
 	</developers>
 
+	<issueManagement>
+		<url>https://github.com/TNO-MST/object-model-template/issues</url>
+	</issueManagement>
+
 	<scm>
 		<connection>scm:git:git://github.com/TNO-MST/object-model-template.git</connection>
 		<developerConnection>scm:git:ssh://github.com:TNO-MST/object-model-template.git</developerConnection>
