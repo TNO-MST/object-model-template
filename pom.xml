@@ -51,7 +51,7 @@
 		<dependency>
 			<groupId>org.glassfish.jaxb</groupId>
 			<artifactId>jaxb-runtime</artifactId>
-			<version>4.0.5</version>
+			<version>4.0.6</version>
 		</dependency>
 
 		<!-- org.junit.jupiter.api provider, includes api -->
