@@ -1,3 +1,7 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/TNO-MST/object-model-template/build-publish-jar.yaml?branch=main&label=build&event=push)
+[![Maven Central Version](https://img.shields.io/maven-central/v/nl.tno/omt)](https://central.sonatype.com/artifact/nl.tno/omt)
+[![javadoc](https://javadoc.io/badge2/nl.tno/omt/javadoc.svg)](https://javadoc.io/doc/nl.tno/omt) 
+
 # OMT - ObjectModelType
 This Object Model Type (OMT) project provides basic functionality to support other projects to work with HLA (IEEE 1516) OMT data.
 - HLA OMT constant definitions.
